@@ -1,39 +1,34 @@
-# 浙江宣传文风技能
+# 浙江宣传文风写作工具
 
-本项目用于爬取浙江宣传文章、分析文风、制作文风技能并练习写作。
+基于浙江宣传文风的AI写作客户端。
 
-## 目录结构
+## 项目结构
 
 ```
-├── crawl_zjxc.py              # 爬虫脚本
-├── md_to_epub.py              # Markdown转ePub脚本
-├── zjxc-style/                # zjxc-style技能原始文件
-│   ├── SKILL.md
-│   └── reference/articles.md
-└── .claude/
-    ├── settings.local.json
-    └── skills/zjxc-style/    # 已激活的zjxc-style技能
+├── zjxc-source/      # 原始素材（爬虫、数据、技能）
+└── zjxc-writer/      # Chainlit写作客户端
 ```
 
-## 使用方法
+## 开始使用
 
-### 爬取文章
+### 1. 进入客户端目录
 ```bash
-python crawl_zjxc.py
+cd zjxc-writer
 ```
 
-### 转换为ePub
+### 2. 安装依赖
 ```bash
-python md_to_epub.py
+pip install chainlit anthropic
 ```
 
-### 使用文风技能
-在Claude Code中输入 `/zjxc-style`，描述文章主题即可生成浙江宣传风格的议论文。
+### 3. 配置API Key
+```bash
+export ANTHROPIC_API_KEY=your_api_key
+```
 
-## 数据统计
+### 4. 启动
+```bash
+chainlit run app.py
+```
 
-- 爬取文章：970篇
-- 有正文：947篇
-- 无内容：23篇（微信外链/旧版页面）
-- 最早：2023年
-- 最新：2026年5月
+然后访问 http://localhost:8000

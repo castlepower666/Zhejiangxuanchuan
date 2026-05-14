@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip --version)",
+      "Bash(pip install *)",
+      "Bash(python -m playwright install chromium)",
+      "Bash(export PLAYWRIGHT_DOWNLOAD_HOST=https://npmmirror.com/mirrors/playwright/)",
+      "Bash(python scrape_zjxc.py)",
+      "Bash(python scrape_zjxc_playwright.py)",
+      "Bash(python -c ' *)",
+      "Bash(python *)",
+      "WebSearch",
+      "Bash(docker *)",
+      "Bash(mkdir -p \"D:\\\\_Tech_Playground\\\\Zhejiangxuanchuan\\\\.claude\\\\skills\\\\zjxc-style\\\\references\")",
+      "Bash(cp \"D:\\\\_Tech_Playground\\\\Zhejiangxuanchuan\\\\zjxc-style\\\\SKILL.md\" \"D:\\\\_Tech_Playground\\\\Zhejiangxuanchuan\\\\.claude\\\\skills\\\\zjxc-style\\\\SKILL.md\")",
+      "Bash(cp \"D:\\\\_Tech_Playground\\\\Zhejiangxuanchuan\\\\zjxc-style\\\\references\\\\articles.md\" \"D:\\\\_Tech_Playground\\\\Zhejiangxuanchuan\\\\.claude\\\\skills\\\\zjxc-style\\\\references\\\\articles.md\")",
+      "mcp__mcpServers__web_search"
+    ]
+  }
+}
