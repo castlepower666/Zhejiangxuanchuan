@@ -1,0 +1,20 @@
+# 浙江宣传文风项目
+
+## 原始素材（zjxc-source）
+/zjxc-source/文章
+/zjxc-source/.claude/settings.local.json
+
+## 客户端（zjxc-writer）
+/zjxc-writer/.env
+/zjxc-writer/.env.local
+/zjxc-writer/*.local
+/zjxc-writer/__pycache__/
+/zjxc-writer/*.pyc
+/zjxc-writer/.pytest_cache/
+/zjxc-writer/.vscode/
+/zjxc-writer/.idea/
+/zjxc-writer/D.S_Store
+/zjxc-writer/Thumbs.db
+
+# 根目录
+/.claude/settings.local.json
